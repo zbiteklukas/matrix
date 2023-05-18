@@ -8,61 +8,194 @@
         "env": []
     },
     {
-        "id": "504e0ec82f99ab34",
-        "type": "inject",
+        "id": "37184dbcfdfc4a11",
+        "type": "ui_group",
+        "name": "Control panel",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "59e25061d3d3c734",
+        "type": "ui_button",
         "z": "a93b4461de95145d",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
+        "group": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
         "payload": "",
-        "payloadType": "date",
-        "x": 240,
-        "y": 140,
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 220,
         "wires": [
             [
-                "ab1cdd8ef3f2c290"
+                "bd88b5bced2b83ea"
             ]
         ]
     },
     {
-        "id": "ab1cdd8ef3f2c290",
-        "type": "debug",
-        "z": "a93b4461de95145d",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "c74ea483fc68526e",
-        "type": "catch",
+        "id": "bd88b5bced2b83ea",
+        "type": "http request",
         "z": "a93b4461de95145d",
         "name": "",
-        "scope": null,
-        "uncaught": false,
-        "x": 180,
-        "y": 240,
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 390,
+        "y": 220,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "442596b9f83e802e",
+        "type": "serial in",
+        "z": "a93b4461de95145d",
+        "x": 230,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4c8753e17bd6c7f",
+        "type": "serial out",
+        "z": "a93b4461de95145d",
+        "x": 230,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "40d6c21f61a23484",
+        "type": "serial request",
+        "z": "a93b4461de95145d",
+        "x": 230,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa1b979c335d0316",
+        "type": "ui_form",
+        "z": "a93b4461de95145d",
+        "name": "",
+        "label": "",
+        "group": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 250,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a17110ab8dfb74bb",
+        "type": "ui_template",
+        "z": "a93b4461de95145d",
+        "group": "37184dbcfdfc4a11",
+        "name": "Test",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "format": "<div layout=\"row\" layout-align=\"space-between\">\n    <p>The number is</p>\n    <font color=\"red\">\n        To je neco      \n    </font>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 230,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "580a7957b19ffdd1",
+        "type": "template",
+        "z": "a93b4461de95145d",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: ",
+        "output": "str",
+        "x": 500,
+        "y": 580,
+        "wires": [
+            [
+                "2ce9dbb08a68bd95"
+            ]
+        ]
+    },
+    {
+        "id": "177c860508387a18",
+        "type": "http in",
+        "z": "a93b4461de95145d",
+        "name": "",
+        "url": "/test1",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 340,
+        "y": 580,
+        "wires": [
+            [
+                "580a7957b19ffdd1"
+            ]
+        ]
+    },
+    {
+        "id": "2ce9dbb08a68bd95",
+        "type": "http response",
+        "z": "a93b4461de95145d",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 580,
+        "wires": []
     }
 ]
