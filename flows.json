@@ -12,16 +12,16 @@
         "type": "ui_group",
         "name": "Control panel",
         "tab": "753d2883f372bca9",
-        "order": 1,
+        "order": 2,
         "disp": true,
-        "width": "6",
+        "width": "12",
         "collapse": false,
         "className": ""
     },
     {
         "id": "753d2883f372bca9",
         "type": "ui_tab",
-        "name": "Demo",
+        "name": "Matrix automaton control panel",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
@@ -47,14 +47,15 @@
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseColor": "#119399",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
                     "default": "#0094CE",
                     "value": "#0094CE",
-                    "edited": false
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
                     "value": "#0094CE",
@@ -124,66 +125,65 @@
         }
     },
     {
-        "id": "59e25061d3d3c734",
-        "type": "ui_button",
+        "id": "cb49ac0f93a84401",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "dc35741cd1282d42",
+        "type": "ui_group",
+        "name": "Matrix space map",
+        "tab": "753d2883f372bca9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9f8d5d2b59768e9a",
+        "type": "ui_template",
         "z": "a93b4461de95145d",
-        "name": "",
         "group": "37184dbcfdfc4a11",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
+        "name": "control_panel",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "format": "<button ng-click=\"send({payload: 'left'})\">\n    <<---\n</button>\n<button ng-click=\"send({payload: 'right'})\">\n    --->>\n</button>\n<button ng-click=\"send({payload: 'forward'})\">\n    forward\n</button>\n<button ng-click=\"send({payload: 'back'})\">\n    back\n</button>\n<button ng-click=\"send({payload: 'line'})\">\n    Line tracking\n</button>\n<button ng-click=\"send({payload: 'follow'})\">\n    Follow\n</button>\n<button ng-click=\"send({payload: 'avoid'})\">\n    Avoid\n</button>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
         "className": "",
-        "icon": "",
-        "payload": "Hello world",
-        "payloadType": "str",
-        "topic": "test",
-        "topicType": "msg",
-        "x": 230,
-        "y": 220,
+        "x": 240,
+        "y": 140,
         "wires": [
-            [
-                "fe21a9c4d930285c",
-                "0430561fa8906185"
-            ]
+            []
         ]
     },
     {
-        "id": "fe21a9c4d930285c",
-        "type": "debug",
+        "id": "5805e5db2922b1b3",
+        "type": "ui_template",
         "z": "a93b4461de95145d",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 400,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "0430561fa8906185",
-        "type": "ui_text",
-        "z": "a93b4461de95145d",
-        "group": "37184dbcfdfc4a11",
-        "order": 1,
+        "group": "dc35741cd1282d42",
+        "name": "space_matrix",
+        "order": 0,
         "width": 0,
         "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
         "className": "",
-        "x": 410,
-        "y": 280,
-        "wires": []
+        "x": 230,
+        "y": 80,
+        "wires": [
+            []
+        ]
     }
 ]

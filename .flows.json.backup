@@ -11,191 +11,179 @@
         "id": "37184dbcfdfc4a11",
         "type": "ui_group",
         "name": "Control panel",
+        "tab": "753d2883f372bca9",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "753d2883f372bca9",
+        "type": "ui_tab",
+        "name": "Matrix automaton control panel",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7ebe18b8828fb9fd",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#119399",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "cb49ac0f93a84401",
+        "type": "ui_group",
+        "name": "Group 1",
         "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "dc35741cd1282d42",
+        "type": "ui_group",
+        "name": "Matrix space map",
+        "tab": "753d2883f372bca9",
+        "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false,
         "className": ""
     },
     {
-        "id": "59e25061d3d3c734",
-        "type": "ui_button",
-        "z": "a93b4461de95145d",
-        "name": "",
-        "group": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 230,
-        "y": 220,
-        "wires": [
-            [
-                "bd88b5bced2b83ea"
-            ]
-        ]
-    },
-    {
-        "id": "bd88b5bced2b83ea",
-        "type": "http request",
-        "z": "a93b4461de95145d",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 390,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "442596b9f83e802e",
-        "type": "serial in",
-        "z": "a93b4461de95145d",
-        "x": 230,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b4c8753e17bd6c7f",
-        "type": "serial out",
-        "z": "a93b4461de95145d",
-        "x": 230,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "40d6c21f61a23484",
-        "type": "serial request",
-        "z": "a93b4461de95145d",
-        "x": 230,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fa1b979c335d0316",
-        "type": "ui_form",
-        "z": "a93b4461de95145d",
-        "name": "",
-        "label": "",
-        "group": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "options": [
-            {
-                "label": "",
-                "value": "",
-                "type": "text",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "": ""
-        },
-        "payload": "",
-        "submit": "submit",
-        "cancel": "cancel",
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": "",
-        "className": "",
-        "x": 250,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a17110ab8dfb74bb",
+        "id": "9f8d5d2b59768e9a",
         "type": "ui_template",
         "z": "a93b4461de95145d",
         "group": "37184dbcfdfc4a11",
-        "name": "Test",
-        "order": 0,
-        "width": "0",
-        "height": "0",
-        "format": "<div layout=\"row\" layout-align=\"space-between\">\n    <p>The number is</p>\n    <font color=\"red\">\n        To je neco      \n    </font>\n</div>",
+        "name": "",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "format": "<button ng-click=\"send({payload: 'left'})\">\n    <<---\n</button>\n<button ng-click=\"send({payload: 'right'})\">\n    --->>\n</button>\n<button ng-click=\"send({payload: 'forward'})\">\n    forward\n</button>\n<button ng-click=\"send({payload: 'back'})\">\n    back\n</button>\n<button ng-click=\"send({payload: 'line'})\">\n    Line tracking\n</button>\n<button ng-click=\"send({payload: 'follow'})\">\n    Follow\n</button>\n<button ng-click=\"send({payload: 'avoid'})\">\n    Avoid\n</button>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 230,
-        "y": 460,
+        "x": 220,
+        "y": 140,
         "wires": [
             []
         ]
     },
     {
-        "id": "580a7957b19ffdd1",
-        "type": "template",
+        "id": "5805e5db2922b1b3",
+        "type": "ui_template",
         "z": "a93b4461de95145d",
+        "group": "dc35741cd1282d42",
         "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "This is the payload: ",
-        "output": "str",
-        "x": 500,
-        "y": 580,
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 220,
+        "y": 80,
         "wires": [
-            [
-                "2ce9dbb08a68bd95"
-            ]
+            []
         ]
-    },
-    {
-        "id": "177c860508387a18",
-        "type": "http in",
-        "z": "a93b4461de95145d",
-        "name": "",
-        "url": "/test1",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 340,
-        "y": 580,
-        "wires": [
-            [
-                "580a7957b19ffdd1"
-            ]
-        ]
-    },
-    {
-        "id": "2ce9dbb08a68bd95",
-        "type": "http response",
-        "z": "a93b4461de95145d",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 670,
-        "y": 580,
-        "wires": []
     }
 ]
