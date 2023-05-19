@@ -14,7 +14,7 @@
         "tab": "753d2883f372bca9",
         "order": 2,
         "disp": true,
-        "width": "12",
+        "width": "6",
         "collapse": false,
         "className": ""
     },
@@ -136,8 +136,19 @@
     {
         "id": "dc35741cd1282d42",
         "type": "ui_group",
-        "name": "Matrix space map",
+        "name": "Space map",
         "tab": "753d2883f372bca9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5ec36f342f7dfa72",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "6",
@@ -149,7 +160,7 @@
         "type": "ui_template",
         "z": "a93b4461de95145d",
         "group": "37184dbcfdfc4a11",
-        "name": "",
+        "name": "control_panel",
         "order": 1,
         "width": "6",
         "height": "6",
@@ -159,8 +170,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 220,
-        "y": 140,
+        "x": 520,
+        "y": 180,
         "wires": [
             []
         ]
@@ -170,20 +181,85 @@
         "type": "ui_template",
         "z": "a93b4461de95145d",
         "group": "dc35741cd1282d42",
-        "name": "",
+        "name": "space_matrix",
         "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "width": "6",
+        "height": "6",
+        "format": "<style type=\"text/css\">\n    .tg {\n        border-collapse: collapse;\n        border-spacing: 0;\n    }\n\n    .tg td {\n        border-style: solid;\n        border-width: 0px;\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        overflow: hidden;\n        padding: 10px 5px;\n        word-break: normal;\n    }\n\n    .tg th {\n        border-style: solid;\n        border-width: 0px;\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        font-weight: normal;\n        overflow: hidden;\n        padding: 10px 5px;\n        word-break: normal;\n    }\n\n    .tg .tg-syad {\n        background-color: #000000;\n        border-color: inherit;\n        color: #ffffff;\n        text-align: left;\n        vertical-align: top\n    }\n\n    .tg .tg-f8tv {\n        border-color: inherit;\n        font-style: italic;\n        text-align: left;\n        vertical-align: top\n    }\n\n    .tg .tg-0pky {\n        border-color: inherit;\n        text-align: left;\n        vertical-align: top\n    }\n\n    .tg .tg-tw5s {\n        background-color: #fe0000;\n        border-color: inherit;\n        text-align: left;\n        vertical-align: top\n    }\n\n    .tg .tg-c6of {\n        background-color: #ffffff;\n        border-color: inherit;\n        text-align: left;\n        vertical-align: top\n    }\n</style>\n<table class=\"tg\">\n    <thead>\n        <tr>\n            <th class=\"tg-0pky\"></th>\n            <th class=\"tg-0pky\"></th>\n            <th class=\"tg-0pky\"></th>\n            <th class=\"tg-0pky\"></th>\n            <th class=\"tg-0pky\"></th>\n            <th class=\"tg-0pky\"></th>\n            <th class=\"tg-0pky\"></th>\n            <th class=\"tg-0pky\"></th>\n            <th class=\"tg-0pky\"></th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n        </tr>\n        <tr>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n        </tr>\n        <tr>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n        </tr>\n        <tr>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-tw5s\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n        </tr>\n        <tr>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n        </tr>\n        <tr>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n        </tr>\n        <tr>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-c6of\"></td>\n            <td class=\"tg-0pky\"></td>\n        </tr>\n        <tr>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n            <td class=\"tg-0pky\"></td>\n        </tr>\n    </tbody>\n</table>\n<div>{{msg.output}}</div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 220,
+        "x": 510,
         "y": 80,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "74e2d36aef73d57e",
+        "type": "function",
+        "z": "a93b4461de95145d",
+        "name": "matrix_render",
+        "func": "var matrix = [[0, 1, 2, 3, 4, 5, 6, 7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8]];\nreturn { output:'Hellow world'};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 80,
+        "wires": [
+            [
+                "5805e5db2922b1b3",
+                "ef1480220b2dd511"
+            ]
+        ]
+    },
+    {
+        "id": "10f39e10f937a5e3",
+        "type": "ui_button",
+        "z": "a93b4461de95145d",
+        "name": "",
+        "group": "37184dbcfdfc4a11",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 80,
+        "wires": [
+            [
+                "74e2d36aef73d57e"
+            ]
+        ]
+    },
+    {
+        "id": "ef1480220b2dd511",
+        "type": "debug",
+        "z": "a93b4461de95145d",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "output",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 120,
+        "wires": []
     }
 ]
