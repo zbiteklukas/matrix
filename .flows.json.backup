@@ -156,6 +156,25 @@
         "className": ""
     },
     {
+        "id": "8a63fa392e6e5487",
+        "type": "serial-port",
+        "serialport": "/dev/ttyS0",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
         "id": "9f8d5d2b59768e9a",
         "type": "ui_template",
         "z": "a93b4461de95145d",
@@ -215,34 +234,6 @@
         "wires": []
     },
     {
-        "id": "a3516ab758ec3436",
-        "type": "ui_button",
-        "z": "a93b4461de95145d",
-        "name": "",
-        "group": "37184dbcfdfc4a11",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "button",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 110,
-        "y": 80,
-        "wires": [
-            [
-                "3ef247c58d34cc48"
-            ]
-        ]
-    },
-    {
         "id": "3ef247c58d34cc48",
         "type": "function",
         "z": "a93b4461de95145d",
@@ -259,6 +250,20 @@
             [
                 "37378e4040d2d891",
                 "5805e5db2922b1b3"
+            ]
+        ]
+    },
+    {
+        "id": "ec99ac2d623a5e1e",
+        "type": "serial in",
+        "z": "a93b4461de95145d",
+        "name": "",
+        "serial": "8a63fa392e6e5487",
+        "x": 120,
+        "y": 80,
+        "wires": [
+            [
+                "3ef247c58d34cc48"
             ]
         ]
     }
