@@ -266,5 +266,44 @@
                 "3ef247c58d34cc48"
             ]
         ]
+    },
+    {
+        "id": "da1241d90d474b03",
+        "type": "ui_button",
+        "z": "a93b4461de95145d",
+        "name": "",
+        "group": "37184dbcfdfc4a11",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "3ef247c58d34cc48",
+                "880561c4983ac059"
+            ]
+        ]
+    },
+    {
+        "id": "880561c4983ac059",
+        "type": "serial out",
+        "z": "a93b4461de95145d",
+        "name": "",
+        "serial": "8a63fa392e6e5487",
+        "x": 380,
+        "y": 260,
+        "wires": []
     }
 ]
